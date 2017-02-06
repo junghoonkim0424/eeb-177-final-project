@@ -1,0 +1,14 @@
+﻿EEB177
+Junghoon Kim.
+Project Idea
+
+
+In this quarter, I’m also taking animal physiology ,and there is one experiment in progress which is about the circadian rhythm of cockroaches.
+The research topic is to observe how the light with different wavelength affects the circadian rhythm of cockroaches.
+There are 4 total experimental group that  3 pairs of cockroaches in each group, 24 total, are exposed to the lights for 12 hours and leave them in the dark another 12 hours.
+After that, transfer cockroaches to the T-tube, which sweets and something cockroaches dislike are put on each side.
+The way of collecting data is that put cockroach in the tube and measure the time until cockroach reach to the sweet spot. 4 experimental group with 3 pairs each ,so it would be 24 cockroaches data. Moreover, the other variables collecting are light intensity, color filter with different wavelength, and temperature. So there would be 4 variables.
+Species are fixed as ‘german cockroach’
+The data i need to collect is the measured time of each cockroach, light intensities, wavelength of each cockroaches are exposed, and temperature when the experiment in progress.
+I need to arrange those data and analyze to see the differences, and then manipulate and visualize with R program to see the correlations.
+Also graph is needed to make the data more visible.
