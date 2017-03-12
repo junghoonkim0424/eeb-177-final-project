@@ -1,0 +1,30 @@
+---
+title: "Blattodea_Final_Project"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+setwd("~/Desktop/eeb-177/eeb-177-final-project")
+Blattodea <- read.csv("Blattodea-ranges.csv", header = F, as.is = T)
+names(Blattodea) <- c("genus", "species", "minage", "maxage")
+head(Blattodea)
+Blattodea_occ <- ggplot(Blattodea, aes( species, ymin = maxage, ymax=minage, colour = genus))
+Blattodea_occ <- Blattodea_occ + geom_linerange()
+Blattodea_occ
+Blattodea_occ <- Blattodea_occ + theme(legend.position="none")
+Blattodea_occ
+Blattodea_occ <- Blattodea_occ + coord_flip()
+Blattodea_occ
+Blattodea_occ <-  Blattodea_occ +  theme(axis.text.y = element_text(size=3))
+Blattodea_occ
+Blattodea_occ <- Blattodea_occ + theme(axis.ticks.y=element_blank())
+Blattodea_occ
+Blattodea_occ<- Blattodea_occ + scale_y_continuous(limits=c(0, 40), expand = c(0, 0), breaks=c(0, 10, 20, 30, 40))
+Blattodea_occ
+Blattodea_occ<- Blattodea_occ + labs(title = "Blattodea Fossil Occurrences", x = "Species", y = "MYA") + theme(plot.title = element_text(hjust = 0.5, size=22, face = "bold"), axis.title =element_text(size=20))
+Blattodea_occ
+
+```
+
+
